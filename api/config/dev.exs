@@ -42,3 +42,6 @@ config :sling, Sling.Repo,
   database: "sling_dev",
   hostname: "localhost",
   pool_size: 10
+
+# Override connection to database with custom login
+import_config "dev.secret.exs"
